@@ -1,0 +1,45 @@
+.fos-1 {
+    font-size: 64px;
+}
+
+.fos-2 {
+    font-size: 54px;
+}
+
+/* .splash-screen{
+    transform: skewX(-0.06turn);
+} */
+
+.cross-slash{
+    transform: skewX(-0.06turn);
+    background-color: black;
+}
+
+.content-origin{
+    transform: skewX(0.06turn);
+}
+
+.image-rounded{
+    border: solid;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.cardbg{
+    /* From https://css.glass */
+/* From https://css.glass */
+    background: rgba(177, 177, 177, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 1px solid rgba(177, 177, 177, 0.21);
+}
+
+#col2{
+    background-image: url('../image/gif2.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
