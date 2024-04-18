@@ -1,9 +1,24 @@
+@font-face {
+    font-family: 'pixel';
+    src: url('font/Retro\ Gaming.ttf') format('truetype');
+}
+
+.pix{
+    font-family: 'pixel', sans-serif;
+}
+
 .fos-1 {
     font-size: 64px;
+    font-family: 'pixel';
 }
 
 .fos-2 {
+    font-family: 'pixel';
     font-size: 54px;
+}
+
+.spaceless{
+    margin-right: -20px;
 }
 
 /* .splash-screen{

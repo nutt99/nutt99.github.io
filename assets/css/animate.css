@@ -1,0 +1,56 @@
+.portal {
+  font-size: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.portal span {
+  display: inline-block;
+  opacity: 0;
+  position: relative;
+  animation: portalAnimation 1s ease forwards;
+}
+
+.portal span:nth-child(1){
+    animation-delay: 0.1s;
+}
+
+.portal span:nth-child(2){
+    animation-delay: 0.1s;
+}
+
+.portal .fos-1 span:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.portal .fos-1 span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.portal .fos-1 span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.portal .fos-1 span:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+.portal .fos-1 span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.portal .fos-1 span:nth-child(6) {
+    animation-delay: 0.9s;
+}
+
+@keyframes portalAnimation {
+  0% {
+    transform: translateX(100%);
+    opacity: 1;
+    /* border-right: solid white 1px; */
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
