@@ -6,6 +6,7 @@
     <title>nutt.a</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/blink.css">
     <!-- <link rel="stylesheet" href="node_modules/animate.css/animate.min.css"> -->
     <link rel="stylesheet" href="assets/css/animate.css">
   </head>
@@ -13,7 +14,7 @@
     <div class="bg-dark" id="col2">
           <div class="row" style="height: 100vh; width: 100%;">
             <div class="col text-light cross-slash d-flex justify-content-center align-items-center" id="col1" style="width: 50%; height: 100%;">
-              <div class="row portal" style="width:min-content;">
+              <div class="row portal" id="animasi" style="width:min-content;">
                 <span class="fos-2 content-origin text-end">NataDeChocolate</span>
                 <!-- <p class="border-bottom border-5" style="width: ;"></p> -->
                 <span class="border-top border-5" style="width: 100%"></span>
@@ -30,12 +31,20 @@
             
             <div class="col text-light d-flex justify-content-center align-items-center ms-4" style="width: 50%; height: 100%;">
                 <div class="row text-center d-flex justify-content-center cardbg container p-3" style="width: 500px;">
-                  <img src="assets/image/nutta.png" alt="profile" class="rounded-circle" style="width: 320px; height: 300px;">
-                  <p class="fs-4 text-white pix">beep boop....</p>
+                  <div class="row d-flex justify-content-center">
+                    <img src="assets/image/nutta.png" alt="profile" class="rounded-circle" style="width: 320px; height: 300px;">
+                  </div>
+                  <div class="row text-center">
+                    <p class="fs-4 text-white pix" id="beep">beep boop....</p>
+                    <p class="fs-6 text-info pix" onclick="showMainPage()" style="cursor: pointer;">TEKAN DISINI UNTUK MELIHAT LEBIH LANJUT</p>
+                  </div>
+                  
                 </div>
+                <!-- <div class="row">look</div> -->
             </div>
         </div>
     </div>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/set.js"></script>
   </body>
 </html>
