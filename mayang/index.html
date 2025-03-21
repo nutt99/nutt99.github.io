@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Shop</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .image-container{
+            height: 100vh;
+        }
+
+        .image-container img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .carousel-item img{
+            filter: blur(2px);
+        }
+
+        body{
+            background-image: url(assets/bg.jpg);
+            background-repeat: repeat-y;
+            background-position: center;
+        }
+    </style>
+
+  </head>
+  <body>
+
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top" style="opacity: 0.8;">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-end">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Pricing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End navbar -->
+
+      <!-- start content -->
+      <!-- start carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="height: 100vh;">
+            <img src="assets/jam_tangan_olahraga_1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>A stylish hat</h5>
+              <p>Make your own style in the summer with stylish hat</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="height: 100vh;">
+            <img src="assets/jamm.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Coolest watch</h5>
+              <p>Don't make your partner waiting you with this watches</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="height: 100vh;">
+            <img src="https://semar.co.id/wp-content/uploads/2024/05/444763212_329775326595686_3932148725168549022_n1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Necklace</h5>
+              <p>Give her a special present for her special day.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- end carousel -->
+
+      <!-- start about usss -->
+       <div class="container">
+
+        <div class="container mt-5 mb-5 border-bottom border-4 border-black">
+
+          <h3 class="text-center">Tentang Kami</h3>
+
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequatur itaque omnis suscipit velit aspernatur deserunt. Sapiente, molestiae impedit suscipit modi eum possimus. Repellat impedit qui est voluptatibus? Quas, quam.
+            Repellendus eius laborum obcaecati eos deserunt assumenda asperiores eveniet aperiam quisquam aliquid. Optio reiciendis fugiat saepe eaque nulla commodi minus? Aliquam natus, dignissimos eum amet minus unde culpa? Consequatur, odio.
+            Eveniet, ex dolor, cumque id necessitatibus fuga iusto enim officiis corporis, velit ut vitae modi numquam possimus. Maxime, debitis. Ipsum vel aliquam ab. Ipsam neque ipsum earum voluptates perspiciatis quod.
+            Voluptate, illum consectetur adipisci enim natus dolores ducimus. Totam tempora quas provident, cupiditate ratione saepe vero id quibusdam natus fugit veritatis tempore accusantium eos! Doloribus eveniet est ut repellendus vel?
+            Consequuntur a quaerat natus doloremque, quibusdam eos ad rem similique, blanditiis voluptate expedita voluptates nam quo obcaecati quod necessitatibus voluptatem, aspernatur vero reiciendis quos! Harum similique voluptas labore expedita officia.
+          </p>
+        </div>
+
+        <div class="row mb-3 w-100">
+          <h3 class="text-center">Jenis Produk</h3>
+            <div class="col-4">
+                <img class="w-100" src="assets/accesories.jpg" alt="">
+            </div>
+            <div class="col-8 d-flex align-items-center">
+                <div class="row container text-start w-75">
+                    <h2 class="border-bottom border-black pb-2 border-4">Aksesoris Wanita</h2>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cum repellat laborum maxime corrupti repudiandae delectus eius ducimus aperiam magnam ipsa error voluptas iusto fugit nostrum voluptatum voluptate, deleniti facilis.
+                        Deleniti praesentium, molestias illo exercitationem voluptatum modi vero, unde sequi vel blanditiis necessitatibus repellendus optio neque, hic harum. Qui nihil officiis hic. Id culpa exercitationem repellat quibusdam sit alias eius.
+                        Consequuntur sint eveniet, asperiores optio dicta, atque illo dignissimos maiores, facere blanditiis magnam! Iusto a quo culpa numquam ullam dicta voluptates vero unde debitis ea. Praesentium assumenda quae voluptatibus asperiores?</p>
+        
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3 w-100">
+            <div class="col-8 d-flex align-items-center justify-content-end">
+              <div class="row container text-end w-75">
+                <h2 class="border-bottom border-black pb-2 border-4">Aksesoris Pria</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cum repellat laborum maxime corrupti repudiandae delectus eius ducimus aperiam magnam ipsa error voluptas iusto fugit nostrum voluptatum voluptate, deleniti facilis.
+                  Deleniti praesentium, molestias illo exercitationem voluptatum modi vero, unde sequi vel blanditiis necessitatibus repellendus optio neque, hic harum. Qui nihil officiis hic. Id culpa exercitationem repellat quibusdam sit alias eius.
+                  Consequuntur sint eveniet, asperiores optio dicta, atque illo dignissimos maiores, facere blanditiis magnam! Iusto a quo culpa numquam ullam dicta voluptates vero unde debitis ea. Praesentium assumenda quae voluptatibus asperiores?
+                </p>
+              </div>
+            </div>
+            <div class="col-4">
+              <img class="w-100" src="assets/men-accesories.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="w-100 border-4 border-black border-bottom"></div>
+          
+
+       </div>
+       <!-- end about usss -->
+
+      <!-- start about us -->
+      <div class="container mt-4">
+
+        <h3 class="text-center">Produk Kami</h3>
+
+        <div class="row mt-3 d-flex justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="assets/anting.jpg" class="card-img-top" alt="huawei" style="height: 250px;">
+              <div class="card-body">
+                <h5 class="card-title">Earing</h5>
+                <p class="card-text">
+                  Golden earrings, with pearl.
+                </p>
+
+                <h5>Rp. 60,000</h5>
+                <button class="btn btn-warning add-to-cart-btn"  data-name="Earing" data-price="60000">+ Add to cart</button>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="assets/tungsten rings.jpg" class="card-img-top" alt="huawei" style="height: 250px;">
+              <div class="card-body">
+                <h5 class="card-title">Rings</h5>
+                <p class="card-text">
+                  A clasic tungsten rings
+                </p>
+
+                <h5>Rp. 100,000</h5>
+                <button class="btn btn-warning add-to-cart-btn"  data-name="Rings" data-price="100000">+ Add to cart</button>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="assets/kalung2.jpg" class="card-img-top" alt="huawei" style="height: 250px;">
+              <div class="card-body">
+                <h5 class="card-title">Necklace</h5>
+                <p class="card-text">
+                  Golden necklace, with diamond.
+                </p>
+
+                <h5>Rp. 120,000</h5>
+                <button class="btn btn-warning add-to-cart-btn"  data-name="Necklace" data-price="120000">+ Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 4 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="assets/cat bros.jpg" class="card-img-top" alt="huawei" style="height: 250px;">
+              <div class="card-body">
+                <h5 class="card-title">Acrylic Stuff</h5>
+                <p class="card-text">
+                  Custom acrylic stuff for bros, and keychain
+                </p>
+
+                <h5>Rp. 20,000</h5>
+                <button class="btn btn-warning add-to-cart-btn"  data-name="Acrylic stuff" data-price="20000">+ Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 5 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="assets/hat-1.jpg" class="card-img-top" alt="huawei" style="height: 250px;">
+              <div class="card-body">
+                <h5 class="card-title">Straw hat</h5>
+                <p class="card-text">
+                  Clasic straw hat for men
+                </p>
+
+                <h5>Rp. 45,000</h5>
+                <button class="btn btn-warning add-to-cart-btn"  data-name="Straw hat" data-price="45000">+ Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 6 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="assets/hat-2.jpg" class="card-img-top" alt="huawei" style="height: 250px;">
+              <div class="card-body">
+                <h5 class="card-title">Clasic hat</h5>
+                <p class="card-text">
+                  Clasic hat for sport
+                </p>
+
+                <h5>Rp. 35,000</h5>
+                <button class="btn btn-warning add-to-cart-btn"  data-name="Clasic hat" data-price="35000">+ Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 7 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="assets/jam-tanganw.jpg" class="card-img-top" alt="huawei" style="height: 250px;">
+              <div class="card-body">
+                <h5 class="card-title">Women Watch</h5>
+                <p class="card-text">
+                  Clasic watches for women
+                </p>
+
+                <h5>Rp. 115,000</h5>
+                <button class="btn btn-warning add-to-cart-btn"  data-name="Women Watch" data-price="115000">+ Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 8 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="assets/jamm.jpg" class="card-img-top" alt="huawei" style="height: 250px;">
+              <div class="card-body">
+                <h5 class="card-title">Men Watch</h5>
+                <p class="card-text">
+                  A stylish watch for men
+                </p>
+
+                <h5>Rp. 125,000</h5>
+                <button class="btn btn-warning add-to-cart-btn"  data-name="Men Watch" data-price="125000">+ Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- end about us -->
+
+      <!-- Sticky Add to Cart Button -->
+      <button type="button" class="btn btn-success position-fixed rounded-pill" 
+      style="bottom: 20px; right: 20px; z-index: 1050;" 
+      data-bs-toggle="modal" data-bs-target="#exampleModal">
+      🛒
+      </button>
+      <!-- end sticky button -->
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Cart</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="cart-items">
+      Your cart is currently empty. Add items to get started!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button id="checkout-btn" class="btn btn-success">Checkout via WhatsApp</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- End Modal -->
+
+      <!-- Toast Container -->
+<div class="position-fixed top-0 end-0 p-3" style="z-index: 9999">
+  <div id="cart-toast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        Item berhasil ditambahkan ke cart!
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+    <!-- end toast -->
+
+      <!-- end content -->
+
+    <footer class="bg-dark text-white mt-5 p-4">
+  <div class="container">
+    <div class="row">
+      <!-- Branding -->
+      <div class="col-md-4 mb-3">
+        <h5>MayAccesories</h5>
+      </div>
+
+      <!-- Kontak -->
+      <div class="col-md-4 mb-3">
+        <h6>Kontak Kami</h6>
+        <ul class="list-unstyled">
+          <li>📱 <a href="https://wa.me/628385985383" class="text-white text-decoration-none">+62 838-5985-383</a></li>
+          <li>📍 Jl. Pendidikan No.1</li>
+          <li>📧 MayAccesories@MayAccesories.com</li>
+        </ul>
+      </div>
+
+      <!-- Jam & Sosmed -->
+      <div class="col-md-4 mb-3">
+        <h6>Jam Buka</h6>
+        <p>Setiap Hari: 09.00 - 21.00</p>
+        <h6>Ikuti Kami</h6>
+        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+    <hr class="bg-light">
+    <p class="text-center mb-0">&copy; 2025 MayAccesories. All rights reserved.</p>
+  </div>
+</footer>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+  const cart = [];
+  const cartItemsContainer = document.getElementById("cart-items");
+
+  const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
+
+  addToCartButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const name = button.getAttribute("data-name");
+      const price = parseInt(button.getAttribute("data-price"));
+
+      // Cek apakah item sudah ada di cart
+      try {
+        const existingItem = cart.find(item => item.name === name);
+      if (existingItem) {
+        existingItem.quantity += 1;
+      } else {
+        cart.push({ name, price, quantity: 1 });
+      }
+
+      updateCartUI();
+      } catch (error) {
+        console.log("terjadi kesalahan")
+      } finally{
+        const toastEl = document.getElementById('cart-toast');
+        const toast = new bootstrap.Toast(toastEl, { delay: 2000 }); // 2 detik
+        toast.show();
+      }
+    });
+  });
+
+  function updateCartUI() {
+    if (cart.length === 0) {
+      cartItemsContainer.innerHTML = "Your cart is currently empty. Add items to get started!";
+      return;
+    }
+
+    let html = "<ul class='list-group'>";
+    let total = 0;
+
+    cart.forEach(item => {
+      const itemTotal = item.price * item.quantity;
+      total += itemTotal;
+
+      html += `<li class='list-group-item d-flex justify-content-between align-items-center'>
+                ${item.name} x${item.quantity}
+                <span>Rp. ${itemTotal.toLocaleString()}</span>
+              </li>`;
+    });
+
+    html += `</ul><hr><div class='text-end'><strong>Total: Rp. ${total.toLocaleString()}</strong></div>`;
+    cartItemsContainer.innerHTML = html;
+  }
+
+  const checkoutBtn = document.getElementById("checkout-btn");
+
+checkoutBtn.addEventListener("click", () => {
+  if (cart.length === 0) {
+    alert("Keranjang masih kosong!");
+    return;
+  }
+
+  let message = "Halo, saya mau pesan:\n";
+  let total = 0;
+
+  cart.forEach(item => {
+    const itemTotal = item.price * item.quantity;
+    total += itemTotal;
+    message += `- ${item.name} x${item.quantity} (Rp. ${itemTotal.toLocaleString()})\n`;
+  });
+
+  message += `Total: Rp. ${total.toLocaleString()}`;
+
+  const encodedMessage = encodeURIComponent(message);
+  const phoneNumber = "628385985383";
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+  window.open(whatsappURL, "_blank");
+});
+
+
+
+</script>
+
+  </body>
+</html>
