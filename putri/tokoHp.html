@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aksesoris Gadget</title>
+    <link rel="stylesheet" href="tokoHp.css">
+    <!-- Link CDN Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Nabitechno Accesories</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+   
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container text-center text-white">
+            <h1 class="display-4">Aksesoris HP & Perlengkapan Gadget</h1>
+            <p class="lead">Temukan berbagai aksesoris gadget terbaik untukmu!</p>
+            <a href="#menu" class="btn btn-warning btn-lg">Lihat Produk</a>
+        </div>
+    </section>
+    
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="mb-4">Tentang Kami</h2>
+                <p>Kami menyediakan berbagai aksesoris HP dan perlengkapan gadget berkualitas tinggi. Dari casing custom hingga pelindung layar terbaik, kami siap memenuhi kebutuhan gadget Anda.</p>
+                <p>Dengan bahan berkualitas dan desain modern, produk kami memberikan perlindungan sekaligus gaya untuk gadget kesayangan Anda.</p>
+                <a href="#menu" class="btn btn-warning">Lihat Produk</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="aboutImage1.jpg" alt="Tentang Kami" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Menu Section -->
+<section id="menu" class="py-5 text-center text-white">
+    <div class="container">
+        <h2 class="fw-bold">Produk Kami</h2>
+        <p class="mb-4">Temukan aksesoris terbaik untuk gadget kesayangan Anda.</p>
+
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="customCase.jfif" class="img-fluid" alt="Casing Custom">
+                    <h5>Casing Custom</h5>
+                    <p class="card-text">Buat casing HP unik dengan desain sendiri.</p>
+                    <button class="btn btn-warning w-100 mt-2" data-bs-toggle="modal" data-bs-target="#checkoutModal">Pesan Sekarang</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="pelindungLayardanKamera.jfif" class="img-fluid" alt="Pelindung Layar & Kamera">
+                    <h5>Pelindung Layar & Kamera</h5>
+                    <p class="card-text">Lindungi layar dan kamera HP-mu dengan kaca berkualitas.</p>
+                    <button class="btn btn-warning w-100 mt-2" data-bs-toggle="modal" data-bs-target="#checkoutModal">Pesan Sekarang</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="standHp.jfif" class="img-fluid" alt="Stand HP">
+                    <h5>Stand HP</h5>
+                    <p class="card-text">Praktis dan ergonomis untuk berbagai keperluan.</p>
+                    <button class="btn btn-warning w-100 mt-2" data-bs-toggle="modal" data-bs-target="#checkoutModal">Pesan Sekarang</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="twsEarphone.jfif" class="img-fluid" alt="TWS & Earphone Case">
+                    <h5>TWS & Earphone Case</h5>
+                    <p class="card-text">Perlindungan maksimal untuk earphone kesayanganmu.</p>
+                    <button class="btn btn-warning w-100 mt-2" data-bs-toggle="modal" data-bs-target="#checkoutModal">Pesan Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Modal Checkout -->
+<div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="checkoutModalLabel">Checkout Produk</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Produk:</strong> <span id="selectedProduct">-</span></p>
+                <form>
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Jumlah</label>
+                        <input type="number" class="form-control" id="quantity" min="1" value="1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nama Anda</label>
+                        <input type="text" class="form-control" id="name" placeholder="Masukkan nama" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Nomor HP</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Masukkan nomor HP" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Alamat</label>
+                        <textarea class="form-control" id="address" placeholder="Masukkan alamat lengkap" required></textarea>
+                    </div>
+                    <button type="button" class="btn btn-warning w-100" onclick="sendToWhatsApp()">Pesan Sekarang</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p class="mb-1">Ikuti Kami</p>
+        <div class="social-icons">
+            <a href="https://wa.me/628388824045"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/snputriii_/" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+        <p class="mt-3">&copy; 2025 Nabitechno Accesories</p>
+    </div>
+</footer>
+
+
+
+
+
+    
+<!-- Bootstrap JavaScript (wajib untuk modal) -->
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Fungsi untuk mengisi nama produk di modal
+    document.querySelectorAll('.btn-warning').forEach(button => {
+        button.addEventListener('click', function() {
+            let productName = this.closest('.product-card').querySelector('h5').textContent;
+            document.getElementById('selectedProduct').textContent = productName;
+        });
+    });
+    
+    // Fungsi untuk mengirim pesan ke WhatsApp
+    function sendToWhatsApp() {
+        let product = document.getElementById('selectedProduct').textContent;
+        let quantity = document.getElementById('quantity').value;
+        let name = document.getElementById('name').value;
+        let phone = document.getElementById('phone').value;
+        let address = document.getElementById('address').value;
+    
+        if (!name || !phone || !address || !quantity) {
+            alert("Mohon lengkapi semua data sebelum memesan.");
+            return;
+        }
+    
+        let message = `Halo, saya ingin memesan:
+        - Produk: ${product}
+        - Jumlah: ${quantity}
+        - Nama: ${name}
+        - Nomor HP: ${phone}
+        - Alamat: ${address}`;
+    
+        let encodedMessage = encodeURIComponent(message);
+        let phoneNumber = "628388824045"; // Ganti dengan nomor yang benar
+        let waUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        window.open(waUrl, "_blank");
+    }</script>
+</body>
+</html>
