@@ -25,6 +25,21 @@
             background-repeat: repeat-y;
             background-position: center;
         }
+
+        .hero-img{
+          background-image: url(assets/hero-image.jpg);
+          background-position: center;
+          object-fit: cover;
+        }
+
+        .glass-card{
+          background: rgba(0, 0, 0, 0.28);
+          border-radius: 16px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
+          border: 1px solid rgba(0, 0, 0, 0.3);
+        }
     </style>
 
   </head>
@@ -54,6 +69,15 @@
       <!-- End navbar -->
 
       <!-- start content -->
+
+      <div class="hero-img d-flex align-items-center justify-content-center" style="height: 100vh; width: 100%;">
+        <div class="glass-card p-5 text-white text-center">
+          <h1>MayAccesories</h1>
+          <h3 class="mb-5">Temukan aksesoris untuk mu disini</h3>
+          <a class="btn btn-warning" href="#product">Cek Produk Kami</a>
+        </div>
+      </div>
+
       <!-- start carousel -->
       <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -161,13 +185,13 @@ Temukan aksesoris favoritmu hanya di MayAccesories — “Beauty in Every Detail
             <div class="card">
               <img src="assets/anting.jpg" class="card-img-top" alt="huawei" style="height: 250px;">
               <div class="card-body">
-                <h5 class="card-title">Earing</h5>
+                <h5 class="card-title">Anting</h5>
                 <p class="card-text">
-                  Golden earrings, with pearl.
+                  Anting emas dengan mutiara.
                 </p>
 
                 <h5>Rp. 60,000</h5>
-                <button class="btn btn-warning add-to-cart-btn"  data-name="Earing" data-price="60000">+ Add to cart</button>
+                <button class="btn btn-warning add-to-cart-btn"  data-name="Anting" data-price="60000">+ Add to cart</button>
               </div>
             </div>
           </div>
@@ -177,13 +201,13 @@ Temukan aksesoris favoritmu hanya di MayAccesories — “Beauty in Every Detail
             <div class="card">
               <img src="assets/tungsten rings.jpg" class="card-img-top" alt="huawei" style="height: 250px;">
               <div class="card-body">
-                <h5 class="card-title">Rings</h5>
+                <h5 class="card-title">Cincin</h5>
                 <p class="card-text">
-                  A clasic tungsten rings
+                  Cincin klasik dari tungsten
                 </p>
 
                 <h5>Rp. 100,000</h5>
-                <button class="btn btn-warning add-to-cart-btn"  data-name="Rings" data-price="100000">+ Add to cart</button>
+                <button class="btn btn-warning add-to-cart-btn"  data-name="Cincin" data-price="100000">+ Add to cart</button>
               </div>
             </div>
           </div>
@@ -193,13 +217,13 @@ Temukan aksesoris favoritmu hanya di MayAccesories — “Beauty in Every Detail
             <div class="card">
               <img src="assets/kalung2.jpg" class="card-img-top" alt="huawei" style="height: 250px;">
               <div class="card-body">
-                <h5 class="card-title">Necklace</h5>
+                <h5 class="card-title">Kalung</h5>
                 <p class="card-text">
-                  Golden necklace, with diamond.
+                  Kalung emas dengan permata.
                 </p>
 
                 <h5>Rp. 120,000</h5>
-                <button class="btn btn-warning add-to-cart-btn"  data-name="Necklace" data-price="120000">+ Add to cart</button>
+                <button class="btn btn-warning add-to-cart-btn"  data-name="Kalung" data-price="120000">+ Add to cart</button>
               </div>
             </div>
           </div>
@@ -209,13 +233,13 @@ Temukan aksesoris favoritmu hanya di MayAccesories — “Beauty in Every Detail
             <div class="card">
               <img src="assets/cat bros.jpg" class="card-img-top" alt="huawei" style="height: 250px;">
               <div class="card-body">
-                <h5 class="card-title">Acrylic Stuff</h5>
+                <h5 class="card-title">Barang Akrilik</h5>
                 <p class="card-text">
-                  Custom acrylic stuff for bros, and keychain
+                  Kustom benda akrilik untuk ganci dan bros.
                 </p>
 
                 <h5>Rp. 20,000</h5>
-                <button class="btn btn-warning add-to-cart-btn"  data-name="Acrylic stuff" data-price="20000">+ Add to cart</button>
+                <button class="btn btn-warning add-to-cart-btn"  data-name="Barang Akrilik" data-price="20000">+ Add to cart</button>
               </div>
             </div>
           </div>
@@ -225,13 +249,13 @@ Temukan aksesoris favoritmu hanya di MayAccesories — “Beauty in Every Detail
             <div class="card">
               <img src="assets/hat-1.jpg" class="card-img-top" alt="huawei" style="height: 250px;">
               <div class="card-body">
-                <h5 class="card-title">Straw hat</h5>
+                <h5 class="card-title">Topi Jerami</h5>
                 <p class="card-text">
-                  Clasic straw hat for men
+                  Topi jerami klasik untuk pria.
                 </p>
 
                 <h5>Rp. 45,000</h5>
-                <button class="btn btn-warning add-to-cart-btn"  data-name="Straw hat" data-price="45000">+ Add to cart</button>
+                <button class="btn btn-warning add-to-cart-btn"  data-name="Topi Jerami" data-price="45000">+ Add to cart</button>
               </div>
             </div>
           </div>
@@ -241,13 +265,13 @@ Temukan aksesoris favoritmu hanya di MayAccesories — “Beauty in Every Detail
             <div class="card">
               <img src="assets/hat-2.jpg" class="card-img-top" alt="huawei" style="height: 250px;">
               <div class="card-body">
-                <h5 class="card-title">Clasic hat</h5>
+                <h5 class="card-title">Topi Klasik</h5>
                 <p class="card-text">
-                  Clasic hat for sport
+                  Topi klasik untuk olahraga.
                 </p>
 
                 <h5>Rp. 35,000</h5>
-                <button class="btn btn-warning add-to-cart-btn"  data-name="Clasic hat" data-price="35000">+ Add to cart</button>
+                <button class="btn btn-warning add-to-cart-btn"  data-name="Topi Klasik" data-price="35000">+ Add to cart</button>
               </div>
             </div>
           </div>
@@ -257,13 +281,13 @@ Temukan aksesoris favoritmu hanya di MayAccesories — “Beauty in Every Detail
             <div class="card">
               <img src="assets/jam-tanganw.jpg" class="card-img-top" alt="huawei" style="height: 250px;">
               <div class="card-body">
-                <h5 class="card-title">Women Watch</h5>
+                <h5 class="card-title">Jam Tangan Wanita</h5>
                 <p class="card-text">
-                  Clasic watches for women
+                  Jam tangan klasik untuk wanita.
                 </p>
 
                 <h5>Rp. 115,000</h5>
-                <button class="btn btn-warning add-to-cart-btn"  data-name="Women Watch" data-price="115000">+ Add to cart</button>
+                <button class="btn btn-warning add-to-cart-btn"  data-name="Jam Tangan Wanita" data-price="115000">+ Add to cart</button>
               </div>
             </div>
           </div>
@@ -273,13 +297,13 @@ Temukan aksesoris favoritmu hanya di MayAccesories — “Beauty in Every Detail
             <div class="card">
               <img src="assets/jamm.jpg" class="card-img-top" alt="huawei" style="height: 250px;">
               <div class="card-body">
-                <h5 class="card-title">Men Watch</h5>
+                <h5 class="card-title">Jam Tangan Pria</h5>
                 <p class="card-text">
-                  A stylish watch for men
+                  Jam tangan stylish untuk pria.
                 </p>
 
                 <h5>Rp. 125,000</h5>
-                <button class="btn btn-warning add-to-cart-btn"  data-name="Men Watch" data-price="125000">+ Add to cart</button>
+                <button class="btn btn-warning add-to-cart-btn"  data-name="Jam Tangan Wanita" data-price="125000">+ Add to cart</button>
               </div>
             </div>
           </div>
@@ -336,12 +360,12 @@ Temukan aksesoris favoritmu hanya di MayAccesories — “Beauty in Every Detail
   <div class="container">
     <div class="row">
       <!-- Branding -->
-      <div class="col-md-4 mb-3">
+      <div class="col-md-3 mb-3">
         <h5>MayAccesories</h5>
       </div>
 
       <!-- Kontak -->
-      <div class="col-md-4 mb-3">
+      <div class="col-md-3 mb-3">
         <h6>Kontak Kami</h6>
         <ul class="list-unstyled">
           <li>📱 <a href="https://wa.me/628385985383" class="text-white text-decoration-none">+62 838-5985-383</a></li>
@@ -351,7 +375,7 @@ Temukan aksesoris favoritmu hanya di MayAccesories — “Beauty in Every Detail
       </div>
 
       <!-- Jam & Sosmed -->
-      <div class="col-md-4 mb-3">
+      <div class="col-md-3 mb-3">
         <h6>Jam Buka</h6>
         <p>Setiap Hari: 09.00 - 21.00</p>
         <h6>Ikuti Kami</h6>
@@ -361,6 +385,9 @@ Temukan aksesoris favoritmu hanya di MayAccesories — “Beauty in Every Detail
         <a href="https://wa.me/628385985383" class="text-white text-decoration-none">
           <img src="assets/wa-nobg.png" alt="" style="height: 65px; width: 65px;">
         </a>
+      </div>
+      <div class="col-md-3 mb-3">
+        <iframe class="border rounded shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.2858074158726!2d98.77503257497277!3d3.5212702964530136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303139c71a10606b%3A0xfd56c4eeb7b7bf28!2sGg.%20Armed%20No.13%2C%20Limau%20Manis%2C%20Kec.%20Tj.%20Morawa%2C%20Kabupaten%20Deli%20Serdang%2C%20Sumatera%20Utara%2020362!5e0!3m2!1sid!2sid!4v1742563026707!5m2!1sid!2sid" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
     <hr class="bg-light">
