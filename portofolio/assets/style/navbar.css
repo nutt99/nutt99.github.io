@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: celestial;
+    src: url(../fonts/celestial/CelestialFree.ttf);
+}
+
+.navbar-l {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FAF1E6;
+    padding: 30px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo-l {
+    color: black;
+    font-size: 1.5em;
+  }
+  
+  .nav-links-l {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links-l li a {
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    transition: background 0.3s;
+  }
+  
+  .nav-links-l li a:hover {
+    background-color: #FAF1E6;
+    border-radius: 4px;
+  }
+  
+  .hamburger-l {
+    display: none;
+    color: black;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  section {
+    height: 100vh;
+    padding: 40px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links-l {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      top: 60px;
+      background-color: #333;
+      width: 200px;
+      padding: 10px;
+    }
+  
+    .nav-links-l.show {
+      display: flex;
+    }
+  
+    .hamburger-l {
+      display: block;
+    }
+  }
