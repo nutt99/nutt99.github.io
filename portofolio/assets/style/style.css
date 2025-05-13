@@ -6,7 +6,10 @@
     border: 1px none rgba(255, 255, 255, 0.3);
 }
 
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: red;
+.hero-image{
+    background-image: url(../images/shima\ rin.jpg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: cover;
+    background-position-y: center;
 }
