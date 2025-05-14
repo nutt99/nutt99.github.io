@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -195,4 +195,92 @@
 </script>
 </body>
 </html>
+ -->
 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  .scrollable-container {
+  width: 300px;
+  height: 200px; /* atau gunakan max-height */
+  overflow-x: auto; /* ini membuat area bisa discroll secara vertikal */
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.scrollable-container::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari, Edge (WebKit/Blink) */
+}
+
+</style>
+
+ </head>
+ <body>
+  <div class="scrollable-container" id="scroll-container">
+  <p><a href="#" onclick="scrollingContent('link1')">Lorem</a> <a href="#" onclick="scrollingContent('link2')">ipsum</a> dolor sit amet...</p>
+  <p id="panjang"><a href="#" onclick="scrollingContent('panjang')">Isi panjang...</a></p>
+  <p>Dan terus panjang...</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam animi eos consequatur praesentium ad dolorem quo, reprehenderit architecto, ea illum explicabo? Labore quasi rem culpa esse, debitis dolor maiores.</p>
+  <p>Scroll ke bawah untuk melihat lebih banyak konten.</p>
+  <p id="aks"><a href="#" onclick="scrollingContent('aks')">aksdlasdkalskd</a></p>
+  <p>ajsdljalsjdnnnnnnnn</p>
+  <p id="link1">link 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sint, dolorum odit nam facilis harum praesentium sunt doloribus ipsa illum tenetur id iste officia voluptates quia tempora, enim laboriosam. Autem?</p>
+  <p>link 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, corrupti cum. Rem dolorum incidunt tenetur minima nobis. Culpa consequuntur officiis fuga sit et molestiae quaerat laborum soluta neque. Labore, facilis.</p>
+  <p id="link2">link 4 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat veritatis, quam facilis sint fugiat quisquam, necessitatibus earum tempore laborum consequatur fuga saepe debitis! Fugit placeat, adipisci minima fuga quo nobis?</p>
+</div>
+
+<script>
+
+  function scrollingContent(tid){
+    const targetElement = document.getElementById(tid)
+    const container = document.getElementById("scroll-container")
+
+    const containerRect = container.getBoundingClientRect()
+    const targetElementRect = targetElement.getBoundingClientRect()
+
+    const scrollOffset = targetElementRect.left - containerRect.left
+    const scrollAmount = scrollOffset - (containerRect.width / 2) + (targetElementRect.width / 2)
+
+    container.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    })
+  }
+
+  // document.querySelectorAll('.scrollable-container a[href^="#"]').forEach(link => {
+  //   link.addEventListener('click', function (e) {
+  //     e.preventDefault();
+  //     const targetId = this.getAttribute('href').substring(1);
+  //     const targetEl = document.getElementById(targetId);
+  //     const container = document.querySelector('.scrollable-container');
+
+  //     if (targetEl && container) {
+  //       const containerRect = container.getBoundingClientRect();
+  //       const targetRect = targetEl.getBoundingClientRect();
+
+  //       const scrollOffset = targetRect.left - containerRect.left;
+  //       const scrollAmount = scrollOffset - (container.clientWidth / 2) + (targetEl.clientWidth / 2);
+
+  //       console.log(container.clientWidth)
+  //       console.log(targetEl.clientWidth);
+
+  //       container.scrollBy({
+  //         left: scrollAmount,
+  //         behavior: 'smooth'
+  //       });
+  //     }
+  //   });
+  // });
+</script>
+
+
+ </body>
+ </html>
