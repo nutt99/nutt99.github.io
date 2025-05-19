@@ -12,4 +12,5 @@
     background-origin: content-box;
     background-size: cover;
     background-position-y: center;
+    backdrop-filter: blur(10px);
 }

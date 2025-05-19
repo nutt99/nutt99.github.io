@@ -10,8 +10,50 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="assets/swiper/swiper-bundle.css"> -->
     <title>NataDeChocolate | nutt.a</title>
+
+    <style>
+      .scroll-container{
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 220px;
+        padding: 10px;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+      }
+
+      .scroll-container::-webkit-scrollbar {
+        display: none;
+      }
+
+      .img-items{
+        width: 400px;
+        object-fit: cover;
+        max-height: 200px;
+        border-radius: 15px;
+        object-position: top;
+      }
+
+      .fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+    </style>
+
 </head>
-<body class="bg-light hero-image">
+<body class="bg-light hero-image" id="super-component">
     <!-- start navbar -->
     <nav class="navbar-l glass-effect">
         <div class="logo-l">MySite</div>
@@ -28,11 +70,11 @@
     <!-- end navbar -->
     
     <!-- start content -->
+    
     <div class="row d-flex p-1 align-items-center" style="margin-left: 0px; margin-bottom: 0px; margin-right: 0px; margin-top: 30px; padding: 0px;">
-      <div class="row" style="width: 100%; padding-left: 100px;">
-
+      <div class="row" id="previewSection" style="width: 100%; padding-left: 100px;">
         <!-- left side preview -->
-        <div class="col me-5 d-flex flex-column justify-content-end" style="width: 50%;">
+        <div class="col me-5 d-flex flex-column justify-content-center" style="width: 50%;">
           <div class="row">
             <h1 class="text-light" style="font-size: 65px;">Its Project title</h1>
           </div>
@@ -48,30 +90,90 @@
         </div>
 
         <!-- right side preview -->
-        <div class="col">
-          <img src="assets/images/shima rin freeze.jpg" alt="" style="border: 1px solid white; border-radius: 25px; height: auto; width: 100%;">
+        <div class="col" id="project-preview">
+          <img src="assets/images/shima rin.jpg" alt="" style="border: 1px solid white; border-radius: 25px; height: auto; max-width: 100%;">
         </div>
 
-        <div class="row">
-          <div class="col">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facilis labore eligendi sed quidem corrupti, modi molestiae, quo, libero minima architecto nesciunt blanditiis fuga dolores saepe ipsa. Ab, magnam quaerat?
+        <!-- card slider -->
+        
+      </div>
+      <div class="row mt-3">
+          <div class="col-12">
+            <div class="scroll-container" id="scroll-container">
+              <div id="image1">
+                <img class="img-items" onclick="scrollingContent('image1')" src="assets/images/altair stand.jpg" alt="">
+              </div>
+              <div id="image2">
+                <img class="img-items" onclick="scrollingContent('image2')" src="assets/images/altair.jpg" alt="">
+              </div>
+              <div id="image3">
+                <img class="img-items" onclick="scrollingContent('image3')" src="assets/images/cool shima rin.jpg" alt="">
+              </div>
+              <div id="image4">
+                <img class="img-items" onclick="scrollingContent('image4')" src="assets/images/shima rin fishing.jpg" alt="">
+              </div>
+              <div id="image5">
+                <img class="img-items" onclick="scrollingContent('image5')" src="assets/images/shima rin freeze.jpg" alt="">
+              </div>
+              <div id="image6">
+                <img class="img-items" onclick="scrollingContent('image6')" src="assets/images/shima rin.jpg" alt="">
+              </div>
+              <div id="image7">
+                <img class="img-items" onclick="scrollingContent('image7')" src="assets/images/vlcsnap-2024-04-01-14h31m07s733.png" alt="">
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
     </div>
 
     <!-- end content -->
 
     <!-- footer start -->
-     <!-- <div class="footer">
+     <div class="footer">
       footer
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni animi saepe rem commodi minus provident voluptatum et, aliquid consectetur delectus quos? Rem, ducimus ex reprehenderit porro officiis iusto suscipit commodi.
-     </div> -->
+     </div>
      <!-- footer end -->
 
 <script src="assets/scripts/navbar.js"></script>
 <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+
+  var previewSection = document.getElementById("previewSection")
+  const divElement = document.getElementById("project-preview")
+
+
+  function scrollingContent(tid){
+    const targetElement = document.getElementById(tid)
+    const container = document.getElementById("scroll-container")
+    var image = targetElement.querySelector("img")
+    var prevImage = divElement.querySelector("img")
+    var imgSrc = image.src
+
+    const containerRect = container.getBoundingClientRect()
+    const targetElementRect = targetElement.getBoundingClientRect()
+
+    const scrollOffset = targetElementRect.left - containerRect.left
+    const scrollAmount = scrollOffset - (containerRect.width / 2) + (targetElementRect.width / 2)
+
+    const body = document.body;
+
+    body.style.backgroundImage = `url("${imgSrc}")`
+
+    previewSection.classList.add("fade-in")
+
+    container.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    })
+
+    prevImage.src = imgSrc
+
+    previewSection.addEventListener("animationend", function(){
+      previewSection.classList.remove("fade-in")
+    })
+  }
+</script>
 <!-- <script src="assets/swiper/swiper-bundle.min.js"></script> -->
 </body>
 </html>
