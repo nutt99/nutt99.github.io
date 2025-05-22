@@ -1,3 +1,28 @@
+body{
+    color: #ffffff;
+    background-color: #0ccaf0;
+    font-family: 
+        "YakuHanJP",
+        "ITC Avant Garde Gothic Pro",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        "Yu Gothic",
+        YuGothic,
+        "Hiragino Kaku Gothic ProN",
+        Arial,
+        "Meiryo",
+        Meiryo,
+        sans-serif;
+}
+
+.text-heading{
+    text-transform: uppercase; 
+    font-size: 6vw; 
+    padding: 0px 20px;
+    line-height: 1em;
+}
+
 .glass-effect{
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -13,4 +38,61 @@
     background-size: cover;
     background-position-y: center;
     backdrop-filter: blur(10px);
+}
+
+.project-preview-t{
+    font-size: small; 
+    background-color: #ffe135; 
+    color: black; 
+    padding: 3px;
+    font-size: 0.5em;
+    font-weight:900;
+}
+
+.hero-section-image{
+    position: relative;
+}
+
+.hero-overlay-component{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+.image-preview{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.column-text-direction{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.rounded-image{
+    border-radius: 50%;
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+}
+
+.element-container{
+    height: 100%;
+    padding: 0 10px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.col{
+    flex-direction: column;
 }

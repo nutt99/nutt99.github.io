@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/style/image-slider.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/footer.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="assets/swiper/swiper-bundle.css"> -->
     <title>NataDeChocolate | nutt.a</title>
 
@@ -53,7 +53,7 @@
     </style>
 
 </head>
-<body class="bg-light hero-image" id="super-component">
+<body id="super-component">
     <!-- start navbar -->
     <nav class="navbar-l glass-effect">
         <div class="logo-l">MySite</div>
@@ -71,59 +71,57 @@
     
     <!-- start content -->
     
-    <div class="row d-flex p-1 align-items-center" style="margin-left: 0px; margin-bottom: 0px; margin-right: 0px; margin-top: 30px; padding: 0px;">
-      <div class="row" id="previewSection" style="width: 100%; padding-left: 100px;">
-        <!-- left side preview -->
-        <div class="col me-5 d-flex flex-column justify-content-center" style="width: 50%;">
-          <div class="row">
-            <h1 class="text-light" style="font-size: 65px;">Its Project title</h1>
-          </div>
-          <div class="row">
-            <div class="glass-effect p-2 text-light" style="border-radius: 10px; width: 100%;">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vitae quae architecto tempora, ullam vel obcaecati ducimus velit sequi nesciunt repellendus, quam fugiat possimus, in inventore nostrum quod hic explicabo.
-              its description
-            </div>
-          </div>
-          <div class="row mt-2">
-            <p class="btn btn-success" style="width: fit-content; border-radius: 30px;">it will be a category</p>
-          </div>
-        </div>
-
-        <!-- right side preview -->
-        <div class="col" id="project-preview">
-          <img src="assets/images/shima rin.jpg" alt="" style="border: 1px solid white; border-radius: 25px; height: auto; max-width: 100%;">
-        </div>
-
-        <!-- card slider -->
-        
+    <div class="flex-container row" style="margin-bottom: 20px; height: 100vh; width: 100%;">
+      <!-- name -->
+      <div class="flex-container col" style="flex: 1; height: 100%;">
+        <h1 class="column-text-direction text-heading" style="color: #ffe135;">
+          <span>natade</span> <br>
+          <span>chocolate</span>
+        </h1>
+        <h2 style="text-align: center; text-transform: uppercase; width: 100%;">
+          <span class="project-preview-t">project preview</span>
+        </h2>
       </div>
-      <div class="row mt-3">
-          <div class="col-12">
-            <div class="scroll-container" id="scroll-container">
-              <div id="image1">
-                <img class="img-items" onclick="scrollingContent('image1')" src="assets/images/altair stand.jpg" alt="">
-              </div>
-              <div id="image2">
-                <img class="img-items" onclick="scrollingContent('image2')" src="assets/images/altair.jpg" alt="">
-              </div>
-              <div id="image3">
-                <img class="img-items" onclick="scrollingContent('image3')" src="assets/images/cool shima rin.jpg" alt="">
-              </div>
-              <div id="image4">
-                <img class="img-items" onclick="scrollingContent('image4')" src="assets/images/shima rin fishing.jpg" alt="">
-              </div>
-              <div id="image5">
-                <img class="img-items" onclick="scrollingContent('image5')" src="assets/images/shima rin freeze.jpg" alt="">
-              </div>
-              <div id="image6">
-                <img class="img-items" onclick="scrollingContent('image6')" src="assets/images/shima rin.jpg" alt="">
-              </div>
-              <div id="image7">
-                <img class="img-items" onclick="scrollingContent('image7')" src="assets/images/vlcsnap-2024-04-01-14h31m07s733.png" alt="">
-              </div>
+
+      <!-- image prev -->
+      <div class="flex-container col" style="flex: 9;">
+        <div class="hero-section-image" style="overflow: hidden;">
+
+          <div class="hero-overlay-component">
+            <div class="glass-effect">
+              <h1>keren</h1>
             </div>
           </div>
+          
+          <img class="image-preview" id="image-prev" src="assets/images/shima rin fishing.jpg" alt="">
+          <img src="assets/images/vlcsnap-2024-04-01-14h31m07s733.png" alt="" class="image-preview">
         </div>
+      </div>
+    </div>
+
+    <!-- information -->
+
+    <div class="element-container">
+
+      <div class="flex-container row" style="background-color: blue;">
+        <div class="flex-container col" style="background-color: azure; flex: 8;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam tempore nesciunt dolores at. Labore quas vero fuga eos recusandae ipsum eum necessitatibus quo voluptate neque, pariatur animi, omnis libero.
+        </div>
+        <div class="flex-container col" style="background-color: aqua; flex: 2;">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, aperiam dolorem voluptate modi eveniet deleniti molestiae fugit esse quos eius inventore dignissimos perferendis aliquam quisquam obcaecati hic repellendus? Alias, odio!
+        </div>
+      </div>
+
+      <!-- it will be about -->
+      <div class="flex-container row">
+        <div class="flex-container col" style="align-items: center; justify-content: center; flex: 5;">
+          <img class="rounded-image" src="assets/images/shima rin freeze.jpg" alt="">
+        </div>
+        <div class="flex-container col" style="flex: 5;">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa fugiat non recusandae voluptatem voluptates totam. Error voluptatibus illo dolorum repudiandae animi nam repellendus, placeat, ducimus corporis qui quos totam illum.
+        </div>
+      </div>
+
     </div>
 
     <!-- end content -->
@@ -136,7 +134,7 @@
      <!-- footer end -->
 
 <script src="assets/scripts/navbar.js"></script>
-<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="../bootstrap/js/bootstrap.bundle.min.js"></script> -->
 <script>
 
   var previewSection = document.getElementById("previewSection")
