@@ -1,0 +1,55 @@
+.slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-down{
+    animation: slideDown 0.8s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+.fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.progress-bar{
+    animation: progressBar 7s ease-out forwards;
+}
+
+@keyframes progressBar{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
