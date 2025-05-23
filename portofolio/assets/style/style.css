@@ -1,19 +1,7 @@
 body{
     color: #ffffff;
     background-color: #0ccaf0;
-    font-family: 
-        "YakuHanJP",
-        "ITC Avant Garde Gothic Pro",
-        -apple-system,
-        BlinkMacSystemFont,
-        "Helvetica Neue",
-        "Yu Gothic",
-        YuGothic,
-        "Hiragino Kaku Gothic ProN",
-        Arial,
-        "Meiryo",
-        Meiryo,
-        sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 #hero-name{
@@ -104,4 +92,16 @@ body{
 
 .d-none{
     display: none;
+}
+
+.information-parent-items{
+    position: relative;
+    width: 100%; 
+    padding:18px;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.information-child-items{
+    position: absolute;
 }

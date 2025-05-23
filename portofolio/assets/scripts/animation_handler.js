@@ -8,13 +8,23 @@ var pInfoDetail = document.getElementById("p-info-detail")
 var isOnContent = false;
 var projectData = [
     {
-        "name" : "sislap-lpju",
-        "image" : "Screenshot_1.png",
+        "name" : "Altair",
+        "image" : "altair.jpg",
         "detail" : "sislap lpju adalah projek pemantauan lampu jalan milik dinas perhubungan medan yang menggunakan website, dan mobile sebagai platform"
     },
     {
-        "name" : "al-maimun",
-        "image": "Screenshot_2.png",
+        "name" : "shima rin",
+        "image" : "shima_rin.jpg",
+        "detail" : "sislap lpju adalah projek pemantauan lampu jalan milik dinas perhubungan medan yang menggunakan website, dan mobile sebagai platform"
+    },
+    {
+        "name" : "shima rin fishing",
+        "image" : "shima_rin_fishing.jpg",
+        "detail" : "sislap lpju adalah projek pemantauan lampu jalan milik dinas perhubungan medan yang menggunakan website, dan mobile sebagai platform"
+    },
+    {
+        "name" : "Altair Manga",
+        "image": "altair_stand.jpg",
         "detail": "ini merupakan sistem pemberitahuan, pengecekan, dan sistem adminstrasi milik mesjid almaimun yang berlokasi di komplek puri zahara di jalan bunga rinte"
     }
 ];

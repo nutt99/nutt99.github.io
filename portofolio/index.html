@@ -9,36 +9,9 @@
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/animation.css">
     <!-- <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="assets/swiper/swiper-bundle.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;600&family=Poppins:wght@400;600&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
     <title>NataDeChocolate | nutt.a</title>
-
-    <style>
-      .scroll-container{
-        display: flex;
-        flex-direction: row;
-        column-gap: 20px;
-        width: 100%;
-        overflow-x: auto;
-        overflow-y: hidden;
-        height: 220px;
-        padding: 10px;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-      }
-
-      .scroll-container::-webkit-scrollbar {
-        display: none;
-      }
-
-      .img-items{
-        width: 400px;
-        object-fit: cover;
-        max-height: 200px;
-        border-radius: 15px;
-        object-position: top;
-      }
-
-    </style>
 
 </head>
 <body id="super-component" onload="imageChange()">
@@ -46,7 +19,7 @@
     <nav class="navbar-l glass-effect">
         <div class="logo-l">nutt.a</div>
         <ul class="nav-links-l" id="navLinks-l">
-          <li><a href="#home" class="nav-link-l">Home</a></li>
+          <li><a href="#information" class="nav-link-l">Home</a></li>
           <li><a href="#about" class="nav-link-l">About</a></li>
           <li><a href="#services" class="nav-link-l">Services</a></li>
           <li><a href="#contact" class="nav-link-l">Contact</a></li>
@@ -94,32 +67,63 @@
 
     <!-- information -->
 
-    <div class="element-container">
+    <div class="element-container" id="information">
 
-      <div class="flex-container row">
-        <div class="flex-container col" style="flex: 8; width: 100%; padding:18px ;justify-content: space-between; align-items: center;">
-          <div style="background-color: red;">
-            content 1
+      <div class="flex-container row" style="margin-top: 80px; height: 100%;">
+        <div class="flex-container col information-parent-items" style="flex: 8; justify-content: end;">
+
+          <div class="flex-container col" style="width: 90%; height: 100%; align-items: start; justify-content: center; position: relative; padding: 10px;">
+            <div class="flex-container" style="background-color: black; height: 50%; align-items: center; width: 100%;">
+              <h1>Englis Project : upcoming!</h1>
+            </div>
+            <div style="position: absolute; top: 0; margin-top: 30px;">
+              <h2>2021.07.05</h2>
+            </div>
           </div>
-          <div style="background-color: green;">
-            content 2
+          
+          <div class="flex-container col" style="width: 90%; height: 100%; align-items: start; justify-content: center; position: relative; padding: 10px;">
+            <div class="flex-container" style="background-color: black; height: 50%; align-items: center; width: 100%;">
+              <h1>Englis Project : upcoming!</h1>
+            </div>
+            <div style="position: absolute; top: 0; margin-top: 30px;">
+              <h2>2021.07.05</h2>
+            </div>
           </div>
-          <div style="background-color: blue;">
-            content 3
+
+          <div class="flex-container col" style="width: 90%; height: 100%; align-items: start; justify-content: center; position: relative; padding: 10px;">
+            <div class="flex-container" style="background-color: black; height: 50%; align-items: center; width: 100%;">
+              <h1>Englis Project : upcoming!</h1>
+            </div>
+            <div style="position: absolute; top: 0; margin-top: 30px;">
+              <h2>2021.07.05</h2>
+            </div>
           </div>
+
         </div>
-        <div class="flex-container col" style="background-color: aqua; flex: 2;">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, aperiam dolorem voluptate modi eveniet deleniti molestiae fugit esse quos eius inventore dignissimos perferendis aliquam quisquam obcaecati hic repellendus? Alias, odio!
+        <div class="flex-container col" style="flex: 2;">
+          <h1 class="column-text-direction text-heading" style="color: #ffe135; font-size: 8em;">
+            <span>infor</span> <br>
+            <span>mation</span>
+          </h1>
         </div>
       </div>
 
       <!-- it will be about -->
-      <div class="flex-container row">
-        <div class="flex-container col" style="align-items: center; justify-content: center; flex: 5;">
-          <img class="rounded-image" src="assets/images/shima rin freeze.jpg" alt="">
+      <div class="flex-container row" style="padding: 25px; margin-top: 180px;">
+        <div class="flex-container col" style="flex: 1; align-items: center;">
+          <h1 class="column-text-direction text-heading" style="color: #ffe135;">
+            <span>about</span>
+          </h1>
         </div>
-        <div class="flex-container col" style="flex: 5;">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa fugiat non recusandae voluptatem voluptates totam. Error voluptatibus illo dolorum repudiandae animi nam repellendus, placeat, ducimus corporis qui quos totam illum.
+        <div class="flex-container col" style="align-items: center; justify-content: start; flex: 4;">
+          <img class="rounded-image" src="assets/images/shima_rin_freeze.jpg" alt="">
+        </div>
+        <div class="flex-container col" style="flex: 4; background-color: #ffe135; text-align: justify; font-size: 20px;">
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum enim eveniet est at ab deserunt excepturi repellat molestiae, unde ullam hic aut obcaecati eos iure ipsam odio nihil dignissimos soluta?
+            Amet voluptates a asperiores aut ipsam ratione praesentium, consequuntur cupiditate cumque aspernatur quis! Sequi voluptatibus ad, iusto delectus aperiam consequuntur aspernatur beatae voluptas vitae rem? Quos ex labore aperiam sequi.
+            Laborum quisquam atq
+          </div>
         </div>
       </div>
 
@@ -129,8 +133,10 @@
 
     <!-- footer start -->
      <div class="footer">
-      footer
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni animi saepe rem commodi minus provident voluptatum et, aliquid consectetur delectus quos? Rem, ducimus ex reprehenderit porro officiis iusto suscipit commodi.
+        <ul class="footer-list">
+          <li>a</li>
+          <li>b</li>
+        </ul>
      </div>
      <!-- footer end -->
 
