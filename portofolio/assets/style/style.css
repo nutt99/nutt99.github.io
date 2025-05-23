@@ -105,3 +105,24 @@ body{
 .information-child-items{
     position: absolute;
 }
+
+.fs-6{
+    font-size: 18px;
+}
+
+.information-parent-items-style{
+    width: 90%; 
+    height: 100%; 
+    align-items: start; 
+    justify-content: center; 
+    position: relative;
+    padding: 10px;
+}
+
+.information-parent-items-child-style{
+    background-color: black; 
+    height: 50%; 
+    align-items: center; 
+    width: 100%; 
+    justify-content: center;
+}
