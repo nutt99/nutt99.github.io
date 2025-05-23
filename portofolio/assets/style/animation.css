@@ -1,0 +1,150 @@
+.title1 span {
+  display: inline-block;
+  transform: translateX(-5em);
+  opacity: 0;
+  animation: slideInLR 3s forwards;
+}
+
+/* .title { animation-delay: 0s; } */
+.title1 span:nth-child(6){ animation-delay: 0.1s; }
+.title1 span:nth-child(5){ animation-delay: 0.2s; }
+.title1 span:nth-child(4){ animation-delay: 0.3s; }
+.title1 span:nth-child(3){ animation-delay: 0.4s; }
+.title1 span:nth-child(2){ animation-delay: 0.5s; }
+.title1 span:nth-child(1){ animation-delay: 0.6s; }
+
+@keyframes slideInLR {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.endtitle1 span {
+  display: inline-block;
+  transform: translateX(0);
+  opacity: 1;
+  animation: endslideInLR 3.5s forwards;
+}
+
+/* .title { animation-delay: 0s; } */
+.endtitle1 span:nth-child(6){ animation-delay: 0.1s; }
+.endtitle1 span:nth-child(5){ animation-delay: 0.2s; }
+.endtitle1 span:nth-child(4){ animation-delay: 0.3s; }
+.endtitle1 span:nth-child(3){ animation-delay: 0.4s; }
+.endtitle1 span:nth-child(2){ animation-delay: 0.5s; }
+.endtitle1 span:nth-child(1){ animation-delay: 0.6s; }
+
+@keyframes endslideInLR {
+  to {
+    transform: translateX(5em);
+    opacity: 0;
+  }
+}
+
+.title2 span {
+  display: inline-block;
+  transform: translateX(5em);
+  opacity: 0;
+  animation: slideInRL 3s forwards;
+}
+
+/* .title { animation-delay: 0s; } */
+.title2 span:nth-child(1){ animation-delay: 0.1s; }
+.title2 span:nth-child(2){ animation-delay: 0.2s; }
+.title2 span:nth-child(3){ animation-delay: 0.3s; }
+.title2 span:nth-child(4){ animation-delay: 0.4s; }
+.title2 span:nth-child(5){ animation-delay: 0.5s; }
+.title2 span:nth-child(6){ animation-delay: 0.6s; }
+.title2 span:nth-child(7){ animation-delay: 0.7s; }
+.title2 span:nth-child(8){ animation-delay: 0.8s; }
+.title2 span:nth-child(9){ animation-delay: 0.9s; }
+
+@keyframes slideInRL {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.endtitle2 span {
+  display: inline-block;
+  transform: translateX(0);
+  opacity: 1;
+  animation: endslideInRL 3.5s forwards;
+}
+
+/* .title { animation-delay: 0s; } */
+.endtitle2 span:nth-child(1){ animation-delay: 0.1s; }
+.endtitle2 span:nth-child(2){ animation-delay: 0.2s; }
+.endtitle2 span:nth-child(3){ animation-delay: 0.3s; }
+.endtitle2 span:nth-child(4){ animation-delay: 0.4s; }
+.endtitle2 span:nth-child(5){ animation-delay: 0.5s; }
+.endtitle2 span:nth-child(6){ animation-delay: 0.6s; }
+.endtitle2 span:nth-child(7){ animation-delay: 0.7s; }
+.endtitle2 span:nth-child(8){ animation-delay: 0.8s; }
+.endtitle2 span:nth-child(9){ animation-delay: 0.9s; }
+
+@keyframes endslideInRL {
+  to {
+    transform: translateX(-5em);
+    opacity: 0;
+  }
+}
+
+
+.slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-down{
+    animation: slideDown 0.8s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+.fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.progress-bar{
+    animation: progressBar 7s ease-out forwards;
+}
+
+@keyframes progressBar{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}

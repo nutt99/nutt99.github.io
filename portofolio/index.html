@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/navbar.css">
+    <link rel="stylesheet" href="assets/style/image-slider.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <link rel="stylesheet" href="assets/style/animation.css">
+    <!-- <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;600&family=Poppins:wght@400;600&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+    <title>NataDeChocolate | nutt.a</title>
+
+</head>
+<body id="super-component" onload="imageChange()">
+    <!-- start navbar -->
+
+    <div class="flex-container row" id="splash" style="justify-content: center; align-items: center; width: 100%; height: 100vh;">
+      <h1 style="line-height: 1em; font-size: 10vh; letter-spacing: -0.14em;">
+        <div class="title1" id="title1">
+          <span>N</span>
+          <span>A</span>
+          <span>T</span>
+          <span>A</span>
+          <span>D</span>
+          <span>E</span>
+        </div> 
+        <div class="title2" id="title2">
+          <span>C</span>
+          <span>H</span>
+          <span>O</span>
+          <span>C</span>
+          <span>O</span>
+          <span>L</span>
+          <span>A</span>
+          <span>T</span>
+          <span>E</span>
+        </div>
+      </h1>
+    </div>
+
+    <div class="d-none" id="realcontent">
+    <nav class="navbar-l glass-effect">
+        <div class="logo-l">nutt.a</div>
+        <ul class="nav-links-l" id="navLinks-l">
+          <li><a href="#information" class="nav-link-l">Home</a></li>
+          <li><a href="#about" class="nav-link-l">About</a></li>
+          <li><a href="#services" class="nav-link-l">Services</a></li>
+          <li><a href="#contact" class="nav-link-l">Contact</a></li>
+        </ul>
+        <div class="hamburger-l" id="hamburger-l">
+          ☰
+        </div>
+    </nav>
+    <!-- end navbar -->
+    
+    <!-- start content -->
+    
+    <div class="flex-container row" style="margin-bottom: 20px; height: 100vh; width: 100%;">
+      <!-- name -->
+      <div class="flex-container col" id="hero-name" style="flex: 1; height: 100%;">
+        <h1 class="column-text-direction text-heading" style="color: #ffe135;">
+          <span>natade</span> <br>
+          <span>chocolate</span>
+        </h1>
+        <h2 style="text-align: center; text-transform: uppercase; width: 100%;">
+          <span class="project-preview-t">project preview</span>
+        </h2>
+      </div>
+
+      <!-- image prev -->
+      <div class="flex-container col" id="heroId" style="flex: 9;">
+        <div class="hero-section-image fade-in" style="overflow: hidden;">
+
+          <div class="hero-overlay-component d-none" id="project-info" style="padding: 0 25px;">
+            <div class="" style="width: fit-content; color: black; background-color: #ffe135; border-radius: 15px; padding: 5px;">
+              <h1 id="p-info-heading"></h1>
+            </div>
+            <div class="glass-effect" id="p-info-detail">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="hero-overlay-component progress-bar" id="progress-bar" style="height: 1%; background-color: blue; ">
+          </div>
+          
+          <img class="image-preview" id="image-prev" src="" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- information -->
+
+    <div class="element-container" id="information">
+
+      <div class="flex-container row" style="margin-top: 80px; height: 100%;">
+        <div class="flex-container col information-parent-items" style="flex: 8; justify-content: end;">
+
+          <div class="flex-container col information-parent-items-style">
+            <div class="flex-container information-parent-items-child-style">
+              <h1 class="fs-6">Englis Project : upcoming!</h1>
+            </div>
+            <div style="position: absolute; top: 0; margin-top: 30px;">
+              <h2>2021.07.05</h2>
+            </div>
+          </div>
+          
+          <div class="flex-container col information-parent-items-style">
+            <div class="flex-container information-parent-items-child-style">
+              <h1 class="fs-6">Englis Project : upcoming!</h1>
+            </div>
+            <div style="position: absolute; top: 0; margin-top: 30px;">
+              <h2>2021.07.05</h2>
+            </div>
+          </div>
+
+          <div class="flex-container col information-parent-items-style">
+            <div class="flex-container information-parent-items-child-style">
+              <h1 class="fs-6">Englis Project : upcoming!</h1>
+            </div>
+            <div style="position: absolute; top: 0; margin-top: 30px;">
+              <h2>2021.07.05</h2>
+            </div>
+          </div>
+
+        </div>
+        <div class="flex-container col" style="flex: 2;">
+          <h1 class="column-text-direction text-heading" style="color: #ffe135; font-size: 8em;">
+            <span>infor</span> <br>
+            <span>mation</span>
+          </h1>
+        </div>
+      </div>
+
+      <!-- it will be about -->
+      <div class="flex-container row" style="padding: 50px; margin-top: 180px;">
+        <div class="flex-container col" style="flex: 1; align-items: center;">
+          <h1 class="column-text-direction text-heading" style="color: #ffe135;">
+            <span>about</span>
+          </h1>
+        </div>
+        <div class="flex-container col" style="align-items: center; justify-content: start; flex: 4;">
+          <img class="rounded-image" src="assets/images/shima_rin_freeze.jpg" alt="">
+        </div>
+        <div class="flex-container col" style="flex: 4; text-align: justify; font-size: 20px;">
+          <div class="flex-container row">
+            <div class="flex-container row">
+              <h1>
+                <span>NataDe</span> <br>
+                <span>Chocolate</span>
+              </h1>
+            </div>
+            <div class="flex-container row" style="align-items: end; justify-content: end;padding: 10px; width: 100%;">
+              <h3>nutt.a</h3>
+            </div>
+          </div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, corrupti? Odio culpa dolorem iusto dolore voluptates dolores, harum esse quibusdam labore rerum alias error rem, deleniti itaque adipisci nesciunt ipsam!
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- end content -->
+
+    <!-- footer start -->
+     <div class="footer">
+        <ul class="footer-list">
+          <li>a</li>
+          <li>b</li>
+        </ul>
+     </div>
+     <!-- footer end -->
+</div>
+<script src="assets/scripts/navbar.js"></script>
+<script src="assets/scripts/animation_handler.js"></script>
+<!-- <script src="../bootstrap/js/bootstrap.bundle.min.js"></script> -->
+<script>
+
+  var previewSection = document.getElementById("previewSection")
+  const divElement = document.getElementById("project-preview")
+
+
+  function scrollingContent(tid){
+    const targetElement = document.getElementById(tid)
+    const container = document.getElementById("scroll-container")
+    var image = targetElement.querySelector("img")
+    var prevImage = divElement.querySelector("img")
+    var imgSrc = image.src
+
+    const containerRect = container.getBoundingClientRect()
+    const targetElementRect = targetElement.getBoundingClientRect()
+
+    const scrollOffset = targetElementRect.left - containerRect.left
+    const scrollAmount = scrollOffset - (containerRect.width / 2) + (targetElementRect.width / 2)
+
+    const body = document.body;
+
+    body.style.backgroundImage = `url("${imgSrc}")`
+
+    previewSection.classList.add("fade-in")
+
+    container.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    })
+
+    prevImage.src = imgSrc
+
+    previewSection.addEventListener("animationend", function(){
+      previewSection.classList.remove("fade-in")
+    })
+  }
+</script>
+<!-- <script src="assets/swiper/swiper-bundle.min.js"></script> -->
+</body>
+</html>
