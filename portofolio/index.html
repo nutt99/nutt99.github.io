@@ -27,7 +27,7 @@
           <span>D</span>
           <span>E</span>
         </div> 
-        <div class="title2" id="title2">
+        <div class="title2" id="title2" style="color: #ffe135;">
           <span>C</span>
           <span>H</span>
           <span>O</span>
@@ -38,6 +38,7 @@
           <span>T</span>
           <span>E</span>
         </div>
+        <h2 class="column-text-direction up-To-Down" id="portSplash" style="margin-left: 40px; background-color: #ffe135; color: black; padding: 7px;">PORTOFOLIO</h2>
       </h1>
     </div>
 
@@ -61,7 +62,7 @@
     <div class="flex-container row" style="margin-bottom: 20px; height: 100vh; width: 100%;">
       <!-- name -->
       <div class="flex-container col" id="hero-name" style="flex: 1; height: 100%;">
-        <h1 class="column-text-direction text-heading" style="color: #ffe135;">
+        <h1 class="column-text-direction text-heading up-To-Down" style="color: #ffe135; animation-duration: 0.5s;">
           <span>natade</span> <br>
           <span>chocolate</span>
         </h1>
@@ -95,8 +96,8 @@
 
     <div class="element-container" id="information">
 
-      <div class="flex-container row" style="margin-top: 80px; height: 100%;">
-        <div class="flex-container col information-parent-items" style="flex: 8; justify-content: end;">
+      <div class="flex-container row" id="aboutSection" style="margin-top: 80px; height: 100%;">
+        <div class="flex-container col information-parent-items d-none" id="information-card" style="flex: 8; justify-content: end;">
 
           <div class="flex-container col information-parent-items-style">
             <div class="flex-container information-parent-items-child-style">
@@ -126,7 +127,7 @@
           </div>
 
         </div>
-        <div class="flex-container col" style="flex: 2;">
+        <div class="flex-container col d-none" style="flex: 2;" id="information-about">
           <h1 class="column-text-direction text-heading" style="color: #ffe135; font-size: 8em;">
             <span>infor</span> <br>
             <span>mation</span>
@@ -135,16 +136,16 @@
       </div>
 
       <!-- it will be about -->
-      <div class="flex-container row" style="padding: 50px; margin-top: 180px;">
+      <div class="flex-container row" id="target2" style="padding: 50px; margin-top: 180px;">
         <div class="flex-container col" style="flex: 1; align-items: center;">
-          <h1 class="column-text-direction text-heading" style="color: #ffe135;">
+          <h1 class="column-text-direction text-heading d-none" id="aboutTitle" style="color: #ffe135;">
             <span>about</span>
           </h1>
         </div>
-        <div class="flex-container col" style="align-items: center; justify-content: start; flex: 4;">
+        <div class="flex-container col d-none" id="aboutImage" style="align-items: center; justify-content: start; flex: 4;">
           <img class="rounded-image" src="assets/images/shima_rin_freeze.jpg" alt="">
         </div>
-        <div class="flex-container col" style="flex: 4; text-align: justify; font-size: 20px;">
+        <div class="flex-container col d-none" id="aboutInformation" style="flex: 4; text-align: justify; font-size: 20px;">
           <div class="flex-container row">
             <div class="flex-container row">
               <h1>
@@ -167,10 +168,11 @@
     <!-- end content -->
 
     <!-- footer start -->
-     <div class="footer">
+     <div class="footer" style="margin-top: 40px; margin-bottom: 20px;">
         <ul class="footer-list">
-          <li>a</li>
-          <li>b</li>
+          <li><a href="https://nutt99.github.io" target="_blank">Github</a></li>
+          <li><a href="https://nutt99.itch.io/" target="_blank">Itch.io</a></li>
+          <li><a href="https://instagram.com/natadechocolate__" target="_blank">Instagram</a></li>
         </ul>
      </div>
      <!-- footer end -->
