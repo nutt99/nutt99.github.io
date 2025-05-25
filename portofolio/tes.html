@@ -1,348 +1,110 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<title>Slider Card</title>
-<style>
-  /* Reset & base */
-  * {
-    box-sizing: border-box;
-  }
-  body {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax dengan Gambar Transparan</title>
+    <style>
+      body, html {
     margin: 0;
-    background: #f0f4f8;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 600px;
-    max-width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    font-family: Arial, sans-serif;
+}
 
-  /* Slider Container */
-  .slider-wrapper {
-    position: relative;
-    width: 100%;
-    height: 420px;
-    overflow: hidden;
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-  }
+.parallax-bg-gambar {
+    /* GANTI DENGAN URL GAMBAR TRANSPARAN ANDA */
+    background-image: url('assets/images/spe.png');
 
-  /* Cards container - horizontal scroll */
-  .cards-container {
-    display: flex;
-    overflow-x: hidden; /* hide scrollbar */
-    scroll-behavior: smooth;
-    gap: 16px;
-    padding: 20px;
-    flex-grow: 1;
-  }
+    /* WARNA INI AKAN MUNCUL DI AREA TRANSPARAN GAMBAR ANDA */
+    /* Ini bisa jadi warna merah atau oranye seperti di contoh mikapikazo */
+    background-color: #D32F2F; /* Contoh: warna merah */
 
-  /* Individual card */
-  .card {
-    flex: 0 0 80%;
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-    padding: 24px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s ease;
-  }
+    min-height: 60vh; /* Tinggi minimal section parallax, sesuaikan kebutuhan */
+    /* Anda juga bisa pakai tinggi tetap seperti min-height: 500px; */
 
-  /* Card content */
-  .card h2 {
-    margin: 0 0 12px;
-    font-size: 1.6rem;
-    color: #222;
-  }
+    /* --- KUNCI UNTUK EFEK PARALLAX --- */
+    background-attachment: fixed;
+    /* ----------------------------------- */
 
-  .card p {
-    flex-grow: 1;
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.4;
-  }
+    /* Pengaturan standar untuk background image */
+    background-position: center center; /* Posisi gambar di tengah */
+    background-repeat: no-repeat;     /* Jangan diulang jika gambar bukan pola tileable */
+    /* Jika gambar Anda adalah pola kecil yang ingin diulang, gunakan 'repeat' */
+    background-size: cover;           /* Membuat gambar menutupi seluruh area elemen. */
+    /* Pilihan lain untuk background-size: */
+    /* 'contain': seluruh gambar terlihat, mungkin ada sisa ruang */
+    /* 'auto': ukuran asli gambar */
+    /* '50%': setengah ukuran elemen */
+    /* '300px 200px': ukuran spesifik lebar dan tinggi */
 
-  /* Navigation buttons */
-  .nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(50, 50, 93, 0.7);
-    border: none;
+
+    /* Styling tambahan untuk konten di dalam section parallax (opsional) */
     color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(50,50,93,0.3);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: background 0.3s ease;
-    z-index: 10;
-  }
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Agar padding tidak menambah ukuran total */
+}
 
-  .nav-btn:hover {
-    background: rgba(50, 50, 93, 0.9);
-  }
+/* Contoh jika ada section parallax kedua dengan setting sedikit berbeda */
+.parallax-bg-gambar-2 {
+    /* Ganti dengan gambar lain atau setting background yang berbeda */
+    background-image: url('assets/images/splash-effect.png');
+    background-color: #FF8F00; /* Warna oranye misalnya */
+}
 
-  .nav-left {
-    left: 10px;
-  }
+.konten-di-parallax h1 {
+    font-size: 2.5em;
+    background-color: rgba(0,0,0,0.3); /* Latar semi-transparan untuk teks agar lebih terbaca */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
 
-  .nav-right {
-    right: 10px;
-  }
+.konten-biasa {
+    padding: 50px 20px;
+    background-color: #f4f4f4; /* Warna background untuk konten biasa */
+    color: #333;
+    text-align: justify;
+    /* Memberi tinggi agar halaman bisa di-scroll panjang */
+    min-height: 400px;
+}
 
-  /* Arrow icons */
-  .nav-btn svg {
-    width: 20px;
-    height: 20px;
-    pointer-events: none;
-    fill: white;
-  }
-
-  /* Mobile-friendly tweaks */
-  @media (max-width: 400px) {
-    .card {
-      flex: 0 0 90%;
-      padding: 20px 16px;
-    }
-    .slider-wrapper {
-      height: 400px;
-    }
-  }
-</style>
+.konten-biasa h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+    </style>
 </head>
 <body>
-  <div class="slider-wrapper" role="region" aria-label="Card slider">
-    <button class="nav-btn nav-left" aria-label="Previous card">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-      </svg>
-    </button>
-    <div class="cards-container" tabindex="0">
-      <div class="card" role="group" aria-label="Card 1">
-        <h2>Card One</h2>
-        <p>This is the first card of the slider. It can contain any content such as text, images, or links.</p>
-      </div>
-      <div class="card" role="group" aria-label="Card 2">
-        <h2>Card Two</h2>
-        <p>The second card appears when you navigate right. Cards slide horizontally smoothly.</p>
-      </div>
-      <div class="card" role="group" aria-label="Card 3">
-        <h2>Card Three</h2>
-        <p>This card demonstrates a modern, sleek design with smooth scrolling controlled by buttons.</p>
-      </div>
-      <div class="card" role="group" aria-label="Card 4">
-        <h2>Card Four</h2>
-        <p>Use this slider for testimonials, product showcases, or featured articles.</p>
-      </div>
-    </div>
-    <button class="nav-btn nav-right" aria-label="Next card">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/>
-      </svg>
-    </button>
-  </div>
 
-<script>
-  // JavaScript to handle navigation buttons to slide cards
-  (function(){
-    const container = document.querySelector('.cards-container');
-    const btnLeft = document.querySelector('.nav-left');
-    const btnRight = document.querySelector('.nav-right');
+    <section class="parallax-bg-gambar">
+        <div class="konten-di-parallax">
+            <h1>Efek Parallax dengan Gambar</h1>
+            <p>Gambar background ini tetap saat digulir.</p>
+        </div>
+    </section>
 
-    // The width of one card plus gap
-    function getScrollAmount() {
-      const card = container.querySelector('.card');
-      if (!card) return 0;
-      const style = window.getComputedStyle(card);
-      const marginRight = parseInt(style.marginRight) || 0;
-      const gap = 16; // as per CSS gap
-      return card.offsetWidth + gap;
-    }
+    <section class="konten-biasa">
+        <h2>Bagian Konten Biasa</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Ini adalah banyak teks untuk membuat halaman bisa digulir...</p>
+        <p>Terus gulir ke bawah...</p>
+        <p>Dan ke bawah...</p>
+        <p>Sampai efeknya terlihat jelas.</p>
+    </section>
 
-    btnRight.addEventListener('click', () => {
-      container.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
-    });
+    <section class="parallax-bg-gambar parallax-bg-gambar-2">
+        <div class="konten-di-parallax">
+            <h2>Bagian Parallax Lain</h2>
+        </div>
+    </section>
 
-    btnLeft.addEventListener('click', () => {
-      container.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
-    });
+    <section class="konten-biasa">
+         <h2>Konten Biasa Lagi</h2>
+        <p>Konten tambahan untuk memperpanjang scroll.</p>
+    </section>
 
-    // Optional: Keyboard support for container focus
-    container.addEventListener('keydown', event => {
-      if (event.key === 'ArrowRight') {
-        btnRight.click();
-        event.preventDefault();
-      } else if (event.key === 'ArrowLeft') {
-        btnLeft.click();
-        event.preventDefault();
-      }
-    });
-  })();
-</script>
 </body>
 </html>
- -->
-
- <!DOCTYPE html>
- <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-<style>
-  .scrollable-container {
-  width: 300px;
-  height: 200px; /* atau gunakan max-height */
-  overflow-x: auto; /* ini membuat area bisa discroll secara vertikal */
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  column-gap: 20px;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
-
-.scrollable-container::-webkit-scrollbar {
-  display: none;               /* Chrome, Safari, Edge (WebKit/Blink) */
-}
-
-</style>
-
- </head>
- <body>
-  <div class="scrollable-container" id="scroll-container">
-  <p><a href="#" onclick="scrollingContent('link1')">Lorem</a> <a href="#" onclick="scrollingContent('link2')">ipsum</a> dolor sit amet...</p>
-  <p id="panjang"><a href="#" onclick="scrollingContent('panjang')">Isi panjang...</a></p>
-  <p>Dan terus panjang...</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam animi eos consequatur praesentium ad dolorem quo, reprehenderit architecto, ea illum explicabo? Labore quasi rem culpa esse, debitis dolor maiores.</p>
-  <p>Scroll ke bawah untuk melihat lebih banyak konten.</p>
-  <p id="aks"><a href="#" onclick="scrollingContent('aks')">aksdlasdkalskd</a></p>
-  <p>ajsdljalsjdnnnnnnnn</p>
-  <p id="link1">link 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sint, dolorum odit nam facilis harum praesentium sunt doloribus ipsa illum tenetur id iste officia voluptates quia tempora, enim laboriosam. Autem?</p>
-  <p>link 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, corrupti cum. Rem dolorum incidunt tenetur minima nobis. Culpa consequuntur officiis fuga sit et molestiae quaerat laborum soluta neque. Labore, facilis.</p>
-  <p id="link2">link 4 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat veritatis, quam facilis sint fugiat quisquam, necessitatibus earum tempore laborum consequatur fuga saepe debitis! Fugit placeat, adipisci minima fuga quo nobis?</p>
-</div>
-
-<!-- template -->
-
-
-    <div class="row d-flex p-1 align-items-center" style="margin-left: 0px; margin-bottom: 0px; margin-right: 0px; margin-top: 30px; padding: 0px;">
-      <div class="row" id="previewSection" style="width: 100%; padding-left: 100px;">
-        <!-- left side preview -->
-        <div class="col me-5 d-flex flex-column justify-content-center" style="width: 50%;">
-          <div class="row">
-            <h1 class="text-light" style="font-size: 65px;">Its Project title</h1>
-          </div>
-          <div class="row">
-            <div class="glass-effect p-2 text-light" style="border-radius: 10px; width: 100%;">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vitae quae architecto tempora, ullam vel obcaecati ducimus velit sequi nesciunt repellendus, quam fugiat possimus, in inventore nostrum quod hic explicabo.
-              its description
-            </div>
-          </div>
-          <div class="row mt-2">
-            <p class="btn btn-success" style="width: fit-content; border-radius: 30px;">it will be a category</p>
-          </div>
-        </div>
-
-        <!-- right side preview -->
-        <div class="col" id="project-preview">
-          <img src="assets/images/shima rin.jpg" alt="" style="border: 1px solid white; border-radius: 25px; height: auto; max-width: 100%;">
-        </div>
-
-        <!-- card slider -->
-        
-      </div>
-      <div class="row mt-3">
-          <div class="col-12">
-            <div class="scroll-container" id="scroll-container">
-              <div id="image1">
-                <img class="img-items" onclick="scrollingContent('image1')" src="assets/images/altair stand.jpg" alt="">
-              </div>
-              <div id="image2">
-                <img class="img-items" onclick="scrollingContent('image2')" src="assets/images/altair.jpg" alt="">
-              </div>
-              <div id="image3">
-                <img class="img-items" onclick="scrollingContent('image3')" src="assets/images/cool shima rin.jpg" alt="">
-              </div>
-              <div id="image4">
-                <img class="img-items" onclick="scrollingContent('image4')" src="assets/images/shima rin fishing.jpg" alt="">
-              </div>
-              <div id="image5">
-                <img class="img-items" onclick="scrollingContent('image5')" src="assets/images/shima rin freeze.jpg" alt="">
-              </div>
-              <div id="image6">
-                <img class="img-items" onclick="scrollingContent('image6')" src="assets/images/shima rin.jpg" alt="">
-              </div>
-              <div id="image7">
-                <img class="img-items" onclick="scrollingContent('image7')" src="assets/images/vlcsnap-2024-04-01-14h31m07s733.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-
-<!-- end template -->
-
-
-
-<script>
-
-  function scrollingContent(tid){
-    const targetElement = document.getElementById(tid)
-    const container = document.getElementById("scroll-container")
-
-    const containerRect = container.getBoundingClientRect()
-    const targetElementRect = targetElement.getBoundingClientRect()
-
-    const scrollOffset = targetElementRect.left - containerRect.left
-    const scrollAmount = scrollOffset - (containerRect.width / 2) + (targetElementRect.width / 2)
-
-    container.scrollBy({
-      left: scrollAmount,
-      behavior: 'smooth'
-    })
-  }
-
-  // document.querySelectorAll('.scrollable-container a[href^="#"]').forEach(link => {
-  //   link.addEventListener('click', function (e) {
-  //     e.preventDefault();
-  //     const targetId = this.getAttribute('href').substring(1);
-  //     const targetEl = document.getElementById(targetId);
-  //     const container = document.querySelector('.scrollable-container');
-
-  //     if (targetEl && container) {
-  //       const containerRect = container.getBoundingClientRect();
-  //       const targetRect = targetEl.getBoundingClientRect();
-
-  //       const scrollOffset = targetRect.left - containerRect.left;
-  //       const scrollAmount = scrollOffset - (container.clientWidth / 2) + (targetEl.clientWidth / 2);
-
-  //       console.log(container.clientWidth)
-  //       console.log(targetEl.clientWidth);
-
-  //       container.scrollBy({
-  //         left: scrollAmount,
-  //         behavior: 'smooth'
-  //       });
-  //     }
-  //   });
-  // });
-</script>
-
-
- </body>
- </html>

@@ -126,3 +126,8 @@ body{
     width: 100%; 
     justify-content: center;
 }
+
+.paralax-bg{
+    background-image: url('../images/spe.png');
+    background-size: cover;
+}
