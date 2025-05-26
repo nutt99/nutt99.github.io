@@ -14,6 +14,7 @@ const aboutTitle = document.getElementById("aboutTitle")
 const target2 = document.getElementById("target2")
 const aboutImage = document.getElementById("aboutImage")
 const aboutInformation = document.getElementById("aboutInformation")
+const gambarBg = document.getElementById("gambarBg")
 
 var pInfoHeading = document.getElementById("p-info-heading")
 var pInfoDetail = document.getElementById("p-info-detail")
@@ -114,6 +115,16 @@ function imageChange(){
     imagePrev.src = `assets/images/${projectData[0]['image']}`
     pInfoHeading.textContent = projectData[indexData]['name']
     pInfoDetail.textContent = projectData[indexData]['detail']
+}
+
+function translateBg(){
+    const container = document.getElementById("information");
+    const scrollTop = container.scrollTop;
+    const bg = document.getElementById("gambarBg");
+
+    // Atur translate3d berdasarkan scrollTop
+    const offset = scrollTop * 0.5; // ubah 0.5 ke kecepatan yang diinginkan
+    bg.style.transform = `translate3d(0, ${offset}px, 0)`;
 }
 
 const observer = new IntersectionObserver((entries, observer) => {

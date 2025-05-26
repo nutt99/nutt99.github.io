@@ -131,3 +131,8 @@ body{
     background-image: url('../images/spe.png');
     background-size: cover;
 }
+
+#gambarBg {
+    transition: transform 0.1s linear;
+    will-change: transform;
+  }
