@@ -14,30 +14,31 @@ const aboutTitle = document.getElementById("aboutTitle")
 const target2 = document.getElementById("target2")
 const aboutImage = document.getElementById("aboutImage")
 const aboutInformation = document.getElementById("aboutInformation")
+const gambarBg = document.getElementById("gambarBg")
 
 var pInfoHeading = document.getElementById("p-info-heading")
 var pInfoDetail = document.getElementById("p-info-detail")
 var isOnContent = false;
 var projectData = [
     {
-        "name" : "Altair",
-        "image" : "altair.jpg",
-        "detail" : "sislap lpju adalah projek pemantauan lampu jalan milik dinas perhubungan medan yang menggunakan website, dan mobile sebagai platform"
+        "name" : "SISLAP-LPJU",
+        "image" : "Screenshot_1.png",
+        "detail" : ""
     },
     {
-        "name" : "shima rin",
-        "image" : "shima_rin.jpg",
-        "detail" : "sislap lpju adalah projek pemantauan lampu jalan milik dinas perhubungan medan yang menggunakan website, dan mobile sebagai platform"
+        "name" : "DISFORMA",
+        "image" : "Screenshot_2.png",
+        "detail" : ""
     },
     {
         "name" : "shima rin fishing",
         "image" : "shima_rin_fishing.jpg",
-        "detail" : "sislap lpju adalah projek pemantauan lampu jalan milik dinas perhubungan medan yang menggunakan website, dan mobile sebagai platform"
+        "detail" : ""
     },
     {
         "name" : "Altair Manga",
         "image": "altair_stand.jpg",
-        "detail": "ini merupakan sistem pemberitahuan, pengecekan, dan sistem adminstrasi milik mesjid almaimun yang berlokasi di komplek puri zahara di jalan bunga rinte"
+        "detail": ""
     }
 ];
 
@@ -114,6 +115,16 @@ function imageChange(){
     imagePrev.src = `assets/images/${projectData[0]['image']}`
     pInfoHeading.textContent = projectData[indexData]['name']
     pInfoDetail.textContent = projectData[indexData]['detail']
+}
+
+function translateBg(){
+    const container = document.getElementById("information");
+    const scrollTop = container.scrollTop;
+    const bg = document.getElementById("gambarBg");
+
+    // Atur translate3d berdasarkan scrollTop
+    const offset = scrollTop * 0.5; // ubah 0.5 ke kecepatan yang diinginkan
+    bg.style.transform = `translate3d(0, ${offset}px, 0)`;
 }
 
 const observer = new IntersectionObserver((entries, observer) => {

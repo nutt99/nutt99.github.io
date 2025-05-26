@@ -20,3 +20,11 @@
     text-decoration: none;
     color: white;
 }
+
+.footer-list li {
+    transition: transform 0.5s ease;
+}
+
+.footer-list li:hover {
+    transform: translateY(-15px);
+}
