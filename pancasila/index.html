@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pancasila - Nilai Luhur Bangsa</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img class="nav-icon" src="assets/images/logo_garuda.png" alt="">
+            </div>
+            <div class="sila-nav">
+                <div class="sila-icon" onclick="showContent('sila1')" title="Sila 1">
+                    <img class="rounded-icon" src="assets/images/icon-sila1.svg" alt="">
+                </div>
+                <div class="sila-icon" onclick="showContent('sila2')" title="Sila 2">
+                    <img class="rounded-icon" src="assets/images/icon-sila2.svg" alt="">
+                </div>
+                <div class="sila-icon" onclick="showContent('sila3')" title="Sila 3">
+                    <img class="rounded-icon" src="assets/images/icon-sila3.svg" alt="">
+                </div>
+                <div class="sila-icon" onclick="showContent('sila4')" title="Sila 4">
+                    <img class="rounded-icon" src="assets/images/icon-sila4.svg" alt="">
+                </div>
+                <div class="sila-icon" onclick="showContent('sila5')" title="Sila 5">
+                    <img class="rounded-icon" src="assets/images/icon-sila5.svg" alt="">
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showContent('home')">Beranda</a></li>
+                <li><a href="#" onclick="showContent('about')">About</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content glass-effect" style="padding: 20px;">
+                <h1>Mengembalikan Nilai Luhur Pancasila</h1>
+                <p>Mari bersama-sama menghidupkan kembali nilai-nilai Pancasila yang mulai luntur dalam masyarakat. Pancasila bukan hanya ideologi, tetapi panduan hidup berbangsa dan bernegara.</p>
+                <a href="#" class="cta-button" onclick="showContent('sila1')">Mulai Belajar</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Sila 1 Content -->
+        <section class="content-section" id="sila1">
+            <h2>Ketuhanan Yang Maha Esa</h2>
+            <div class="sila-content">
+                <div class="sila-icon-large">
+                    <img src="assets/images/icon-sila1.svg" alt="" style="width: 100%; height: 100%">
+                </div>
+                <div class="sila-text">
+                    <h3>Toleransi Beragama yang Memudar</h3>
+                    <p>Sila pertama mengajarkan kita untuk bertoleransi terhadap perbedaan keyakinan. Namun, kini sering muncul intoleransi, diskriminasi, dan konflik berbasis agama yang merongrong persatuan bangsa.</p>
+                </div>
+            </div>
+            
+            <div class="problem-solution">
+                <div class="problem">
+                    <h4>🚨 Masalah yang Terjadi:</h4>
+                    <p>• Meningkatnya aksi intoleransi terhadap kelompok minoritas<br>
+                    • Politisasi agama dalam kehidupan bermasyarakat<br>
+                    • Berkurangnya dialog antar umat beragama<br>
+                    • Munculnya radikalisme dan ekstremisme</p>
+                </div>
+                
+                <div class="solution">
+                    <h4>💡 Solusi yang Bisa Dilakukan:</h4>
+                    <p>• Menggelar dialog antar umat beragama secara rutin<br>
+                    • Pendidikan toleransi sejak dini di sekolah dan keluarga<br>
+                    • Melaporkan aksi intoleransi kepada pihak berwajib<br>
+                    • Berpartisipasi dalam kegiatan lintas agama</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sila 2 Content -->
+        <section class="content-section" id="sila2">
+            <h2>Kemanusiaan yang Adil dan Beradab</h2>
+            <div class="sila-content">
+                <div class="sila-icon-large">
+                    <img src="assets/images/icon-sila2.svg" alt="" style="width: 100%; height: 100%">
+                </div>
+                <div class="sila-text">
+                    <h3>Hilangnya Rasa Kemanusiaan</h3>
+                    <p>Sila kedua menekankan pentingnya menjunjung tinggi harkat dan martabat manusia. Sayangnya, kini marak terjadi pelanggaran HAM, diskriminasi, dan kekerasan yang mencerminkan lunturnya nilai kemanusiaan.</p>
+                </div>
+            </div>
+            
+            <div class="problem-solution">
+                <div class="problem">
+                    <h4>🚨 Masalah yang Terjadi:</h4>
+                    <p>• Bullying dan cyberbullying yang meningkat<br>
+                    • Diskriminasi terhadap kelompok tertentu<br>
+                    • Kekerasan dalam rumah tangga<br>
+                    • Ketidakpedulian terhadap penderitaan sesama</p>
+                </div>
+                
+                <div class="solution">
+                    <h4>💡 Solusi yang Bisa Dilakukan:</h4>
+                    <p>• Kampanye anti-bullying di sekolah dan media sosial<br>
+                    • Mendukung penegakan HAM dan kesetaraan<br>
+                    • Melaporkan tindak kekerasan kepada pihak berwajib<br>
+                    • Menunjukkan empati dan kepedulian kepada sesama</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sila 3 Content -->
+        <section class="content-section" id="sila3">
+            <h2>Persatuan Indonesia</h2>
+            <div class="sila-content">
+                <div class="sila-icon-large">
+                    <img src="assets/images/icon-sila3.svg" alt="" style="width: 100%; height: 100%">
+                </div>
+                <div class="sila-text">
+                    <h3>Perpecahan di Tengah Keberagaman</h3>
+                    <p>Sila ketiga mengajarkan persatuan dalam keberagaman. Namun, seringkali perbedaan suku, agama, ras, dan golongan justru menjadi sumber perpecahan yang mengancam keutuhan NKRI.</p>
+                </div>
+            </div>
+            
+            <div class="problem-solution">
+                <div class="problem">
+                    <h4>🚨 Masalah yang Terjadi:</h4>
+                    <p>• Munculnya primordialisme dan sentimen SARA<br>
+                    • Polarisasi politik yang memecah belah<br>
+                    • Gerakan separatisme di beberapa daerah<br>
+                    • Berkurangnya rasa nasionalisme di kalangan muda</p>
+                </div>
+                
+                <div class="solution">
+                    <h4>💡 Solusi yang Bisa Dilakukan:</h4>
+                    <p>• Memperkuat pendidikan multikultural<br>
+                    • Menggelar kegiatan yang mempersatukan berbagai suku<br>
+                    • Menghindari provokasi dan hoaks yang memecah belah<br>
+                    • Menanamkan nilai-nilai Bhinneka Tunggal Ika</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sila 4 Content -->
+        <section class="content-section" id="sila4">
+            <h2>Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan</h2>
+            <div class="sila-content">
+                <div class="sila-icon-large">
+                    <img src="assets/images/icon-sila4.svg" alt="" style="width: 100%; height: 100%">
+                </div>
+                <div class="sila-text">
+                    <h3>Krisis Demokrasi dan Musyawarah</h3>
+                    <p>Sila keempat menekankan pentingnya musyawarah mufakat dalam pengambilan keputusan. Kini, budaya diskusi yang sehat mulai terkikis, diganti dengan politik uang dan kepentingan golongan.</p>
+                </div>
+            </div>
+            
+            <div class="problem-solution">
+                <div class="problem">
+                    <h4>🚨 Masalah yang Terjadi:</h4>
+                    <p>• Politik uang dalam pemilihan umum<br>
+                    • Polarisasi ekstrem dalam berpolitik<br>
+                    • Berkurangnya partisipasi masyarakat dalam demokrasi<br>
+                    • Budaya musyawarah yang tergantikan dengan voting</p>
+                </div>
+                
+                <div class="solution">
+                    <h4>💡 Solusi yang Bisa Dilakukan:</h4>
+                    <p>• Mendorong partisipasi aktif dalam pemilu yang jujur<br>
+                    • Membangun kultur diskusi yang sehat di masyarakat<br>
+                    • Melaporkan praktik politik uang<br>
+                    • Menghidupkan kembali budaya musyawarah di tingkat RT/RW</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sila 5 Content -->
+        <section class="content-section" id="sila5">
+            <h2>Keadilan Sosial bagi Seluruh Rakyat Indonesia</h2>
+            <div class="sila-content">
+                <div class="sila-icon-large">
+                    <img src="assets/images/icon-sila5.svg" alt="" style="width: 100%; height: 100%">
+                </div>
+                <div class="sila-text">
+                    <h3>Kesenjangan Sosial yang Melebar</h3>
+                    <p>Sila kelima mengajarkan pentingnya keadilan sosial untuk semua. Namun, kesenjangan ekonomi semakin lebar, korupsi merajalela, dan akses terhadap pendidikan serta kesehatan masih timpang.</p>
+                </div>
+            </div>
+            
+            <div class="problem-solution">
+                <div class="problem">
+                    <h4>🚨 Masalah yang Terjadi:</h4>
+                    <p>• Kesenjangan ekonomi yang semakin melebar<br>
+                    • Korupsi di berbagai tingkatan pemerintahan<br>
+                    • Akses pendidikan dan kesehatan yang tidak merata<br>
+                    • Hilangnya semangat gotong royong dalam masyarakat</p>
+                </div>
+                
+                <div class="solution">
+                    <h4>💡 Solusi yang Bisa Dilakukan:</h4>
+                    <p>• Mendukung program pemberdayaan ekonomi rakyat<br>
+                    • Melaporkan praktik korupsi yang diketahui<br>
+                    • Berpartisipasi dalam kegiatan sosial kemasyarakatan<br>
+                    • Menghidupkan kembali semangat gotong royong</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2 style="color: white;">Tentang Kami</h2>
+                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
+                    Website ini dibuat sebagai media edukatif untuk mengingatkan kembali pentingnya nilai-nilai Pancasila dalam kehidupan bermasyarakat, berbangsa, dan bernegara.
+                </p>
+                
+                <!-- <div class="team-grid">
+                    <div class="team-member">
+                        <h4>Chrisdinata</h4>
+                        <p>Developer & Content Creator</p>
+                        <p>Berkomitmen untuk menyebarkan nilai-nilai Pancasila melalui teknologi digital.</p>
+                    </div>
+                    <div class="team-member">
+                        <h4>Khalirurrahman Abbas</h4>
+                        <p>Researcher & Content Creator</p>
+                        <p>Fokus pada penelitian tentang implementasi nilai Pancasila di masyarakat modern.</p>
+                    </div>
+                </div> -->
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <h3>Visi Kami</h3>
+                    <p>Menjadi wadah edukasi yang dapat menyadarkan masyarakat akan pentingnya mengamalkan nilai-nilai Pancasila dalam kehidupan sehari-hari.</p>
+                    
+                    <h3 style="margin-top: 2rem;">Misi Kami</h3>
+                    <p>• Menyediakan konten edukatif tentang Pancasila yang mudah dipahami<br>
+                    • Menginspirasi generasi muda untuk mencintai dan mengamalkan Pancasila<br>
+                    • Memfasilitasi diskusi konstruktif tentang implementasi nilai Pancasila</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Website Pancasila - Dibuat dengan ❤️ oleh Chrisdinata & Khalirurrahman Abbas</p>
+            <p>Mari bersama membangun Indonesia yang berdasarkan nilai-nilai Pancasila</p>
+        </div>
+    </footer>
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
