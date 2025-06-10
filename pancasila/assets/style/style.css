@@ -258,6 +258,10 @@
             border-left: 5px solid #c41e3a;
         }
 
+        .problem p{
+            text-align: justify;
+        }
+
         .solution {
             background: #e8f5e8;
             padding: 1.5rem;
